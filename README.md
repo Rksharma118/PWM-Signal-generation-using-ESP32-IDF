@@ -2,23 +2,23 @@
 This project demonstrates how to generate a PWM (Pulse Width Modulation) signal using the ESP32 microcontroller. The PWM signal is used to control the brightness of an LED connected to a GPIO pin. The duty cycle of the PWM signal can be dynamically adjusted through UART console input.
 
 ## Features:
- PWM Signal Generation: Generate a PWM signal with a configurable duty cycle.
- LED Control: Control the brightness of an LED connected to a GPIO pin.
- User Input: Accept user input from the UART console to adjust the PWM duty cycle.
+ ##### PWM Signal Generation: Generate a PWM signal with a configurable duty cycle.
+ ##### LED Control: Control the brightness of an LED connected to a GPIO pin.
+ ##### User Input: Accept user input from the UART console to adjust the PWM duty cycle.
 
 ## Hardware Required:
- ESP32 Development Board (e.g., ESP32 DevKit v1)
- LED (connected to GPIO 2 in this example)
- Resistor (e.g., 220Ω for LED current-limiting)
+ ##### ESP32 Development Board (e.g., ESP32 DevKit v1)
+ ##### LED (connected to GPIO 2 in this example)
+ ##### Resistor (e.g., 220Ω for LED current-limiting)
 
 ## Software Required:
- ESP-IDF (Espressif IoT Development Framework)
- Visual Studio Code (optional but recommended)
- Git
+ ##### ESP-IDF (Espressif IoT Development Framework)
+ ##### Visual Studio Code (optional but recommended)
+ ##### Git
 
 ## Pin Configuration:
-LED_PIN: GPIO 2 is used to control the LED.
-MCPWM: The ESP32's MCPWM (Motor Control Pulse Width Modulation) is used to generate the PWM signal.
+##### LED_PIN: GPIO 2 is used to control the LED.
+##### MCPWM: The ESP32's MCPWM (Motor Control Pulse Width Modulation) is used to generate the PWM signal.
 
 ## How to Set Up the Project:
 
@@ -55,15 +55,15 @@ MCPWM: The ESP32's MCPWM (Motor Control Pulse Width Modulation) is used to gener
 
 ## Code Description:
 
-UART Initialization: UART is initialized to read user input from the console.
+##### UART Initialization: UART is initialized to read user input from the console.
 
-MCPWM Initialization: The MCPWM driver is used to generate the PWM signal on GPIO 2.
+##### MCPWM Initialization: The MCPWM driver is used to generate the PWM signal on GPIO 2.
 
-Duty Cycle Control: The duty cycle of the PWM signal is dynamically updated based on the user input.
+##### Duty Cycle Control: The duty cycle of the PWM signal is dynamically updated based on the user input.
 
-User Input: The duty cycle value is read from the UART console, and the LED's brightness is updated accordingly.
+##### User Input: The duty cycle value is read from the UART console, and the LED's brightness is updated accordingly.
 
-Troubleshooting:
+##### Troubleshooting:
 If the LED doesn't light up, ensure the correct wiring of the LED and resistor to GPIO 2.
 If the console doesn't accept input or gives unexpected results, check that the UART settings are correct and the ESP32 is properly connected to your PC.
 
