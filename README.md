@@ -2,19 +2,19 @@
 This project demonstrates how to generate a PWM (Pulse Width Modulation) signal using the ESP32 microcontroller. The PWM signal is used to control the brightness of an LED connected to a GPIO pin. The duty cycle of the PWM signal can be dynamically adjusted through UART console input.
 
 ## Features:
--> PWM Signal Generation: Generate a PWM signal with a configurable duty cycle.
--> LED Control: Control the brightness of an LED connected to a GPIO pin.
--> User Input: Accept user input from the UART console to adjust the PWM duty cycle.
+ PWM Signal Generation: Generate a PWM signal with a configurable duty cycle.
+ LED Control: Control the brightness of an LED connected to a GPIO pin.
+ User Input: Accept user input from the UART console to adjust the PWM duty cycle.
 
 ## Hardware Required:
--> ESP32 Development Board (e.g., ESP32 DevKit v1)
--> LED (connected to GPIO 2 in this example)
--> Resistor (e.g., 220Ω for LED current-limiting)
+ ESP32 Development Board (e.g., ESP32 DevKit v1)
+ LED (connected to GPIO 2 in this example)
+ Resistor (e.g., 220Ω for LED current-limiting)
 
 ## Software Required:
--> ESP-IDF (Espressif IoT Development Framework)
--> Visual Studio Code (optional but recommended)
--> Git
+ ESP-IDF (Espressif IoT Development Framework)
+ Visual Studio Code (optional but recommended)
+ Git
 
 ## Pin Configuration:
 LED_PIN: GPIO 2 is used to control the LED.
@@ -34,25 +34,24 @@ MCPWM: The ESP32's MCPWM (Motor Control Pulse Width Modulation) is used to gener
 
 4. Configure the Project: Run the following command to configure the project for your ESP32 board:
 
-idf.py menuconfig
-(This is where you can configure project settings like the target device, etc.)
+    idf.py menuconfig
+    (This is where you can configure project settings like the target device, etc.)
 
 5. Build the Project: To build the project, use:
 
-idf.py build
+   idf.py build
 
 6. Flash the Project to ESP32: After building, flash the project to your ESP32 using the following command:
 
+   idf.py -p (YOUR_SERIAL_PORT) flash
 
-idf.py -p (YOUR_SERIAL_PORT) flash
-
-Replace (YOUR_SERIAL_PORT) with the serial port to which your ESP32 is connected.
+   Replace (YOUR_SERIAL_PORT) with the serial port to which your ESP32 is connected.
 
 7. Monitor the Output: To monitor the serial output, use:
 
-idf.py -p (YOUR_SERIAL_PORT) monitor
+   idf.py -p (YOUR_SERIAL_PORT) monitor
 
-This will allow you to see logs, including prompts for entering the PWM duty cycle.
+   This will allow you to see logs, including prompts for entering the PWM duty cycle.
 
 ## Code Description:
 
