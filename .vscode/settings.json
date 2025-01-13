@@ -1,0 +1,15 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPathWin": "C:\\Users\\radha\\esp\\v5.4\\esp-idf",
+    "idf.openOcdConfigs": [
+        "board/esp32-wrover-kit-3.3v.cfg"
+    ],
+    "idf.portWin": "COM6",
+    "idf.toolsPathWin": "C:\\Users\\radha\\.espressif",
+    "idf.flashType": "UART",
+    "files.associations": {
+        "*.ejs": "html",
+        "task.h": "c",
+        "freertos.h": "c"
+    }
+}
